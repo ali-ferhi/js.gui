@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   { path:'', component: HomeComponent },
   { path:'angular-flex-layout', loadChildren: () => import('../fx-layout/fx-layout.module').then(m => m.FxLayoutModule) },
+  { path:'angular-material', loadChildren: () => import('../mat/mat.module').then(m => m.MatModule) },
   { path: '**', redirectTo: '' }
 ];
 
