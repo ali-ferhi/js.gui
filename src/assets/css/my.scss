@@ -1,0 +1,24 @@
+.my-panel {
+    border: solid gray 1px;
+}
+.my-panel-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgray;
+    padding: 5px;
+}
+.my-panel-title {
+    margin: 0;
+}
+.my-panel-body {
+    padding: 5px;
+}
+.my-nav-body {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.my-nav-item {
+    margin: 0 5px;
+}
