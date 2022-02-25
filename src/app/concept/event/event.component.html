@@ -1,0 +1,18 @@
+<div class="my-panel">
+    <header class="my-panel-header">
+        <h3 class="my-panel-title">Events</h3>
+    </header>
+    <section class="my-panel-body">
+        <div class="my-panel">
+            <header class="my-panel-header">
+                <h4 class="my-panel-title">Click</h4>
+            </header>
+            <section class="my-panel-body">
+                <button (click)="onClick($event)">Click here</button>
+                 <ng-container  *ngIf="x && y">
+                     Your are clicked at horizontal coordinate {{x}} and vertical coordinate {{y}} according to the page.
+                 </ng-container>
+            </section>
+        </div>
+    </section>
+</div>
