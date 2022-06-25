@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path:'', component: HomeComponent },
+  { path:'rxjs', loadChildren: () => import('../rxjs/rxjs.module').then(m => m.RxjsModule) },
   { path: '**', redirectTo: '' }
 ];
 

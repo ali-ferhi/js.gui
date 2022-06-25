@@ -1,0 +1,12 @@
+<div class="my-panel">
+    <header class="my-panel-header">
+        <h3 class="my-panel-title">Observer</h3>
+    </header>
+    <section class="my-panel-body">
+        <p>
+            <ng-container *ngFor="let item of data">{{item}}</ng-container>
+        </p>
+        <p *ngIf="error">{{error}}</p>
+        <p *ngIf="complete">{{complete}}</p>
+    </section>
+</div>
