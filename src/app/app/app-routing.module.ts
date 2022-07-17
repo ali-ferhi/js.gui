@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path:'', component: HomeComponent },
+  { path:'angular-material', loadChildren: () => import('../mat/mat.module').then(m => m.MatModule) },
   { path: '**', redirectTo: '' }
 ];
 
